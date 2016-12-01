@@ -46,11 +46,11 @@ get '/' do
 end
 
 protect do
-    get "/secure" do
+    get '/secure' do
         "This is restricted area"
     end
 end
 
-get "/oldpage" do
-    redirect to("/files/newpage.html"), 302
+get '/oldpage' do
+    redirect to('/newpage.html'), 302
 end

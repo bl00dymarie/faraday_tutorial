@@ -9,7 +9,7 @@ require 'json'
 
 con = Faraday.get 'http://localhost:4567/example.json'
 
-data = JSON.parse con.body
+data = JSON.parse(con.body)
 
 puts data["name"]
 puts data["age"]

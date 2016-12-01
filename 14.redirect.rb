@@ -10,3 +10,4 @@ end
 
 res = con.get
 puts res.body
+puts res.body.gsub(%r{</?[^>]+?>}, '')
